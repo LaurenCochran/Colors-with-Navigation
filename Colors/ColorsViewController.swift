@@ -10,6 +10,7 @@ import UIKit
 
 class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var colorsTableView: UITableView!
     var colors = [Colors(name: "red", uiColor: UIColor.red),
                   Colors(name: "orange", uiColor: UIColor.orange),
                   Colors(name: "yellow", uiColor: UIColor.yellow),
@@ -17,6 +18,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
                   Colors(name: "blue", uiColor: UIColor.blue),
                   Colors(name: "purple", uiColor: UIColor.purple),
                   Colors(name: "brown", uiColor: UIColor.brown)]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +31,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return colors.count
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
@@ -39,8 +42,15 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ColorNavigationViewController,
+            let row = colorsTableView.indexPathForSelectedRow?.row{
+            destination.color = colors[row]
+        }
+    }
+    
 
     
 
 }
-}
+
