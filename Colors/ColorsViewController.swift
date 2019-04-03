@@ -51,7 +51,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.cellForRow(at: indexPath)?.isSelected - false
+        tableView.cellForRow(at: indexPath)?.isSelected = false
     }
     
 
