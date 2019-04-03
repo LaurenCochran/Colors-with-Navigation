@@ -38,6 +38,7 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         cell.textLabel?.text = colors[indexPath.row].name
         cell.backgroundColor = colors[indexPath.row].uiColor
+        cell.selectionStyle = .none
         
         return cell
     }
@@ -49,7 +50,9 @@ class ColorsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.isSelected - false
+    }
     
 
 }
