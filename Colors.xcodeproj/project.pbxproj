@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DD0EC991225442C7002F2EF0 /* ColorNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EC990225442C7002F2EF0 /* ColorNavigationViewController.swift */; };
+		DD0EC993225444BD002F2EF0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0EC992225444BD002F2EF0 /* Color.swift */; };
 		DDBB449922332CD000551EEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBB449822332CD000551EEC /* AppDelegate.swift */; };
 		DDBB449E22332CD000551EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDBB449C22332CD000551EEC /* Main.storyboard */; };
 		DDBB44A122332CD000551EEC /* Colors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDBB449F22332CD000551EEC /* Colors.xcdatamodeld */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		DD0EC990225442C7002F2EF0 /* ColorNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNavigationViewController.swift; sourceTree = "<group>"; };
+		DD0EC992225444BD002F2EF0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		DDBB449522332CD000551EEC /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBB449822332CD000551EEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDBB449D22332CD000551EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				DDBB44A722332CD200551EEC /* Info.plist */,
 				DDBB449F22332CD000551EEC /* Colors.xcdatamodeld */,
 				DD0EC990225442C7002F2EF0 /* ColorNavigationViewController.swift */,
+				DD0EC992225444BD002F2EF0 /* Color.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				DD0EC991225442C7002F2EF0 /* ColorNavigationViewController.swift in Sources */,
 				DDBB44A122332CD000551EEC /* Colors.xcdatamodeld in Sources */,
 				DDBB44BC2233327E00551EEC /* ColorsViewController.swift in Sources */,
+				DD0EC993225444BD002F2EF0 /* Color.swift in Sources */,
 				DDBB449922332CD000551EEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
